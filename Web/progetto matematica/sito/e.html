@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<head>
+<link rel="icon" href="immagini/e.png">
+
+	<title>Il numero di Nepero</title>
+
+	<link rel="stylesheet" href="Se.css" type="text/css">
+
+	<meta charset="utf-8">
+	<style>
+	#e{margin: 0px; padding: 0px;}
+	</style>
+</head>
+
+<body>
+<script>
+ function lol(){
+	var audio = new Audio('suoni/Esound.mp3');
+	audio.play();
+ }
+</script>
+
+	<ul class="navbar">
+		<li class="nav"> <a href="index.html"><img class="a" src="immagini/home.png" height="40px" width="40px"> </img></li></a>
+		<li class="nav"> <a id="active" ><img class="a" src="immagini/e.png" height="40px" width="40px"></img> </li></a>
+		<li class="nav"> <a href="pi.html" ><img class="a" src="immagini/pi.png" height="40px" width="40px"> </img></li></a>
+		<li class="nav"> <a href="phi.html" ><img class="a" src="immagini/phi.png" height="40px" width="40px"> </img></li></a>
+		<li class="nav"> <a href="reali.html" ><img class="a" src="immagini/real.png" height="40px" width="40px"></img> </li></a>
+	</ul>
+<div id="bodyy">
+<h1>e</h1>
+
+<em>e</em>, chiamato anche numero di Nepero in Italia o numero di Eulero in ambiente internazionale, è considerata come una delle più importanti costanti irrazionali e trascendenti.
+Le prime 10 cifre di e sono: e = 2.718281828
+<br/>
+<br/>
+
+A differenza di molte delle costanti più importanti (pi greco, la radice quadrata di 2, la sezione aurea) e non è definita in ambito geometrico. Per esempio, come sappiamo, pi greco è il rapporto tra la circonferenza e il suo diametro, invece e compare in uno studio di matematica finanziaria sugli interessi composti pubblicato dal matematico Jacob Bernoulli nel 1683.
+<br/>
+<hr/>
+<br/>
+Per capire cosa si intende per interesse composto immaginate di investire il capitale di 1€ in una banca al tasso di interesse del 100% (una banca molto generosa).
+Dopo un anno percepirete un interesse di 1€ e avrete due scelte:
+<br/>
+<ul>
+	<li>Riscuotere gli interessi, e quindi reinvestire il vostro capitale di 1€ e dopo un altro anno percepirete di nuovo un interesse di 1€. Ripetere questa scelta ogni anno vuol dire operare in regime di interesse semplice.</li>
+	<li>Investire anche gli interessi percepiti aggiungendoli al capitale, cioè investirete 2€ alla fine del primo anno, 4€ alla fine del secondo, in quanto aggiungendo al capitale il 100% di 2€ e quindi raddoppiandolo si ottengono 4€ alla fine del secondo, ecc. Ripetere questa scelta ogni anno vuol dire operare in un regime di interesse composto.</li>
+</ul>
+<br/>
+<hr/>
+<center><strong><h2>Generalizziamo:</h2></strong></center>
+Un capitale C<sub>0</sub>, investito al tasso di interesse annuo r in un regime di interesse composto, dopo un anno frutta un interesse rC<sub>0</sub> e quindi al termine del primo anno il capitale sarà C<sub>1</sub> = C<sub>0</sub> + rC<sub>0</sub> = C<sub>0</sub>(1+r).
+Nel secondo anno l’interesse dovrà essere calcolato sul capitale C<sub>1</sub> e sarà perciò rC<sub>1</sub> = r[C<sub>0</sub>(1 + r)], quindi al termine del secondo anno il capitale sarà C<sub>2</sub> = C<sub>1</sub> + C<sub>1</sub>r = C<sub>1</sub>(1 + r) = [C<sub>0</sub>(1 + r)] (1 + r) =
+C<sub>0</sub>(1 + r)<sup>2</sup>.
+<br/><br/>
+In generale al termine dell’anno n il capitale sarà diventato:
+C<sub>n</sub> = C<sub>0</sub>(1 + r)<sup>n</sup>
+
+ Ritorniamo alla situazione iniziale con il capitale di 1€ in banca e applichiamo un regime di interesse composto, cosa succederebbe se invece che aspettare un intero anno per avere il 100% di interessi io decidessi di investire il capitale ogni 6 mesi con un interesse del 50%? E se investissi il capitale ogni 3 mesi con un interesse del 25%? Guadagnerei più soldi o no?
+<br/>
+<ol>
+	<li>Situazione di attesa di 1 anno con il 100% degli interessi:</li>
+	<ul type="disc">
+		<li>1€: C<sub>1</sub> = C<sub>0</sub>(1+r) = 2€</li>
+	</ul>
+	<li>Situazione con 2 tempi di attesa di 6 mesi l’uno con il 50% di interessi ogni 6 mesi (applicando un regime di interesse composto)</li>
+	<ul type="disc">
+		<li>1€: C<sub>2</sub> = C<sub>0</sub>(1 + r)<sup>2</sup> = 1(1 + &frac12;)<sup>2</sup> = 2,25€</li>
+	</ul>
+	<li>Situazione con 3 tempi di attesa di 4 mesi l’uno con il 33% di interessi ogni 4 mesi (applicando un regime di interesse composto)</li>
+	<ul type="disc">
+		<li>1€: C<sub>3</sub> = C<sub>0</sub>(1 + r)<sup>3</sup> = 1(1 + &frac13;)<sup>3</sup> = 2,370€</li>
+	</ul>
+	<br/>
+</ol>
+In generale dividendo un anno in n parti uguali, in ognuna delle quali viene composto un interesse del <sup>100</sup>&frasl;<sub>n</sub> % al termine dell’anno.
+<br/>
+Il capitale sarà diventato: C<sub>n</sub> = (1 + <sup>1</sup>&frasl;<sub>n</sub>)<sup>n</sup>
+<br/>
+Quindi, cosa succederebbe se invece che investire ogni 6 mesi con il 50% di interessi, si investisse più spesso, come ogni giorno? La formula sarebbe: capitale finale = (1 + <sup>1</sup>&frasl;<sub>365</sub>)<sup>365</sup>   = 2,7145674… €
+E si continuasse ad investire e generare interessi continuamente? Se ogni singolo istante si investissero i soldi applicando un regime di interesse composto, si troverebbe proprio e!
+Infatti e è definita come il limite di n che tende all’infinito nella formula generale scritta prima:<br/><br/>
+<center>
+<span>e = lim n --> &infin; (1 + <sup>1</sup>&frasl;<sub>n</sub>)<sup>n</sup></span><br/><br/>
+</center>
+Diremo quindi che il numero (1 + <sup>1</sup>&frasl;<sub>n</sub>)<sup>n</sup> tende ad e per n che tende ad infinito.
+Il numero e rappresenta pertanto il montante di un capitale di 1€ al termine dell’anno nel caso in cui l’interesse del 100% sia composto in modo continuo, ossia dividendo l’anno in un numero infinito di parti, ognuna delle quali di durata infinitesima.
+Jacob Bernoulli tuttavia, non riuscì a trovare e, che fu approssimata e dimostrata che fosse irrazionale da Eulero nel 1737, trovando anche questa formula per definirla:
+<br/>
+<br/>
+<center>
+<span>e = <sup>1</sup>&frasl;<sub>1!</sub> + <sup>1</sup>&frasl;<sub>2!</sub> + <sup>1</sup>&frasl;<sub>3!</sub> <sup>1</sup>&frasl;<sub>4!</sub> + <sup>1</sup>&frasl;<sub>5!</sub>...</span>
+</center>
+<br/>
+<br/>
+ovvero:
+<br/>
+<center>
+<p>
+		 e = <span id="sigma">&Sigma;</span>
+		 <sup>1</sup>&frasl;<sub>n!</sub>
+</p>
+</center>
+ <br/>
+ <br/>
+
+Dove la dicitura 2! Indica 2*1, 3! Indica 3*2*1 e in generale n! si dice n fattoriale e indica il prodotto di tutti i numeri naturali da 1 compreso fino a n compreso.
+Invece nel 1873 Charles Hermite dimostrò che e è trascendente.
+<hr/>
+<center><h2>Questo è <em>e</em>!</h2></center>
+Questa immagine mostra le prime 10.000 di cifre di <em>e</em>, ognuna delle quali è rappresentata da un quadratino di diverso colore disegnati in sequenza, da totalmente bianco a totalmente nero in base alla cifra che rappresenta, infatti più la cifra sarà vicina allo 0 e più il quadrato sarà di un colore chiaro, diventando sempre più scuro fino ad arrivare al numero 9, rappresentato da un quadratino tutto nero.
+<br/>
+<br/>
+Clicca <a class="normal" href="immagini/E.tiff" download>qui</a> per scaricare la versione da 1 milione di cifre e <a target="_blank" class="normal" href="https://github.com/Simonecimolato/Pi-squares">qui</a> per il codice che produce questa immagine.
+<br/>
+<br/>
+<br/>
+<img id="e" src="immagini/e10.png" width="100%" height="75%"></img>
+<br/>
+<br/>
+<center><h2>Il suono di <em>e</em>!</h2></center>
+Abbiamo visto come si vede <em>e</em>, ma <strong>come si sente?</strong><br/>
+Questo audio contiene 15 secondi nei quali vengono riprodotte le cifre di <em>e</em> in sequenza con un intervallo fra una e l'altra di 90 millisecondi, viene riprodotta una certa frequenza per ogni cifra, le frequenze vanno dai 200 hz ai 900 hz. Più la cifra sarà bassa, più la frequenza sarà vicina ai 200 hz, viceversa se la cifra sarà alta la frequenza sarà vicina ai 900 hz.
+<br/>
+<br/>
+<center>
+<button class="button5" onclick="lol()">Play</button>
+</center>
+Clicca <a target="_blank" class="normal" href="https://github.com/Simonecimolato/Pi-sound">qui</a> per il codice che produce questo audio.
+</body>

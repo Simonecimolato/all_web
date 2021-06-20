@@ -1,0 +1,136 @@
+body{
+  background-position: center;
+  background-image:url(immagini/img.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 10%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+#w{
+  color: white;
+}
+
+#bodyy{
+  text-align: justify;
+  text-justify: inter-word;
+  color: white;
+  margin-top:5%;
+  margin-left:20%;
+  margin-right:20%;
+  font-family: Verdana;
+  }
+
+#active{border-bottom: solid red}
+button{ 
+	background-color: black; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.25s; /* Safari */
+    transition-duration: 0.25s;
+    cursor: pointer;
+	}
+.button5 {
+    background-color: white;
+    color: black;
+    border: 5px solid slategray;
+}
+
+.button5:hover {
+    background-color: black;
+    color: white;
+	border: 4px solid whte;
+}
+
+.navbar{
+  list-style-type: none;
+  width: 100%;
+  overflow: hidden;
+  height: 6%;
+  background-color: slategray;
+  position:fixed;
+  margin-left:0%;
+  margin-right:0%;
+  margin-top:-5%;
+  margin-bottom:10%;
+  padding-top: 1%;
+  text-align:center;
+  display:inline-block;
+}
+span{text-align: center;}
+h1{font-size:400%;text-align: center;}
+
+img{
+  /*padding-left:10%;
+  padding-right:10%;*/
+  transition: -webkit-transform 0.25s ease;
+  transition: transform 0.25s ease;
+}
+
+img:hover:not(#e){
+  transform:scale(1.2);
+  -ms-transform:scale(1.2); /* IE 9 */
+  -moz-transform:scale(1.2); /* Firefox */
+  -webkit-transform:scale(1.2); /* Safari and Chrome */
+  -o-transform:scale(1.2); /* Opera */
+}
+.nav{
+  text-align:center;
+  display:inline-block; /*se metto inline block mi centra le immagini grazie a text align ma non mette il border radius e quindi i bordi coprono l'immagine */
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+a:hover:not(#active):not(.normal){
+  border-bottom: solid orange;
+}
+a{color:#0066ff}
+
+.a{border-radius: 10%;}
+img{object-fit: cover;}
+
+p{
+    height: 50px;
+    line-height: 50px;
+}
+
+#sigma {
+    font-size: 2.5em;
+    display: inline-block;
+    line-height: .7em;
+    vertical-align: middle;
+    text-align: center;
+    display: inline-block;
+}
+
+#sigma:before {
+    font-size: 12px;
+    display: block;
+    left: 0;
+    top: 0;
+    content: "infinito";
+    width: 22px;
+    text-align: center;
+}
+
+#sigma:after {
+    font-size: 12px;
+    display: block;
+    left: 0;
+    bottom: 0;
+    content: "n=0";
+    width: 27px;
+    text-align: center;
+}

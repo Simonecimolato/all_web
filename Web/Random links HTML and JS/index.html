@@ -1,0 +1,121 @@
+<!--Simone Cimolato, 2AL 14/02/2017-->
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Links</title>
+        <meta charset="utf-8" />
+        <base target="_blank"/>
+        <style>
+            body{
+                background-color:#050505;
+                color:white;
+                text-align:center;
+            }
+            ul{
+                font-size:17px;
+                list-style-position: inside;
+            }
+            a:active {
+                color:red;
+            }
+			a{
+                color:blue;
+				text-decoration:none; /* no underline */
+            }
+            button{
+                background-color:red;
+                color:black;
+            }
+            button:hover{
+                background-color:black;
+                color:red;
+            }
+			html{
+				overflow-y:hidden;
+			}
+        </style>
+    </head>
+    
+    <body id="body">
+        <h1 style="color:red">Links</h1>
+        
+        <h2>Regular links </h2>
+        <ul>
+            <!--sostituire questi link e quelli randomici con i link agli esercizi-->
+            <li> Vai a <a href="../mesi/mesi/index.html"> mesi</a></li>
+            <li> Vai a <a href="../esercizio_2_css_quadrilateri/index.html"> quadrilateri</a></li>
+            <li> Vai a <a href="../esercizio_harry_potter/index.html"> harry potter</a></li>
+            <li> Vai a <a href="../esercizio_il_signore_degli_anelli/index.html"> il signore degli anelli</a></li>
+			<li> Vai a <a href="../multimedia/multimedia.html"> multimedia</a></li>
+
+        </ul>
+     
+        <br/>
+        
+        <button onclick="ButtonPress(links)" style="height:60px;width:300px;font-size:25px">Come to the dark side!</button>
+        <span id = "message2"></span>
+        
+        <script language="javascript" type="text/javascript">
+          
+            //list of possible links
+            var links = ["//10.0.1.52/Studenti/4_LiceoScienzeApplicate/2ALSA/2ALSA10/esercixi html + css/esercizio_il_signore_degli_anelli/index.html","../esercizio_harry_potter/index.html","../esercizio_2_css_quadrilateri/index.html","../mesi/mesi/index.html","../multimedia/multimedia.html"];
+            
+            //shuffling the links
+            function shuffle(numbers) {
+                for(var j, x, MaxNumber = numbers.length; MaxNumber; j = parseInt(Math.random() * MaxNumber), x = numbers[--MaxNumber], numbers[MaxNumber] = numbers[j], numbers[j] = x);
+                return numbers;
+            };
+        
+            var resaults = shuffle(links);
+            var times = 0;
+
+            //when the button is pressed
+            function ButtonPress(numbers) {
+                shuffle(links);
+                times++;
+                PassingToLinks();
+                if (times == 1) document.getElementById("message2").innerHTML=("<br/>Scrambled " + times + " time, may power of randomness be with you!");
+                else document.getElementById("message2").innerHTML=("<br/>Scrambled " + times + " times, may power of randomness be with you!");
+            };
+			
+			function change() {
+				document.getElementById('body').style.cssText = 'background-image:url("dab.gif");';
+				document.getElementById("buttonAppear").innerHTML = '<button style="background-color:navy;color:white;float:left;width:150px;height:60px;" onclick="Back()">Make black wallpaper great again</button>';
+				document.getElementById("buttonAppear").style.display = 'block';
+			}
+            function Back(){
+				document.getElementById('body').style.cssText = 'background-color:#050505; color:white';
+			    document.getElementById('buttonAppear').style.display = 'none';
+			}
+        //document.write(resaults);  
+        </script>
+        <br/>
+        
+		<span id="buttonAppear"></span>
+		
+        <h2>Random ones!</h2>
+        
+        <ul>
+            <li> Vai a <a href="" id="link1"> mesi</a> ?</li>
+            <li> Vai a <a href="" id="link2"> quadrilateri</a> ?</li>
+            <li> Vai a <a href="" id="link3"> harry potter</a> ?</li>
+            <li> Vai a <a href="" id="link4"> il signore degli anelli</a> ?</li>
+			<li> Vai a <a href="" id="link5"> multimedia</a> ?</li>
+
+        </ul>
+        
+        <script language="javascript" type="text/javascript">
+            PassingToLinks();
+            function PassingToLinks(){ //passing links to href in an <a> tag
+                document.getElementById("link1").href = resaults[0];
+                document.getElementById("link2").href = resaults[1];
+                document.getElementById("link3").href = resaults[2];
+                document.getElementById("link4").href = resaults[3];
+				document.getElementById("link5").href = resaults[4];
+
+            };
+        </script>
+        <a href="giphy.gif" onclick="change()" download><marquee  behavior="alternate" scrollamount="50"><img src="giphy.gif" alt="trollface" height="380" width="280"/></marquee></a>
+    </body>
+</html>

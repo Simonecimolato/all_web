@@ -1,0 +1,30 @@
+<!--Simone Cimolato, 2AL 14/02/2017-->
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>test</title>
+        <meta charset="utf-8" />
+        <base target="_blank"/>
+    </head>
+    
+    <body>
+        <p>
+        <script language="javascript" type="text/javascript">
+            //list of possible links
+            var links = [1,2,3,4];
+            
+            //shuffling the links
+            function shuffle(numbers) {
+                for(var j, x, MaxNumber = numbers.length; MaxNumber; j = parseInt(Math.random() * MaxNumber), x = numbers[--MaxNumber], numbers[MaxNumber] = numbers[j], numbers[j] = x);
+                    return numbers;
+            };
+        for (var k = 0; k <= 1000; k++) {
+            var resaults = shuffle(links);
+            document.write(resaults);
+            document.write("<br/>");
+        }
+        </script>
+        </p>
+    </body>
+</html>

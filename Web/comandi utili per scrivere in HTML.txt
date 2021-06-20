@@ -1,0 +1,113 @@
+<html> (si mette sempre per iniziare, si mette sempre anche alla fine)
+
+
+<title> (per scrivere un titolo alla programmazione)
+
+
+<head> (per mettere il titolo della pagina)
+
+
+<body> (per mettere un corpo nella pagina)
+
+
+<center> (per decidere dove allinearlo, si puo mettere anche sinistra e destra)
+
+
+<h1> (per decidere la dimensione del carattere, da 1 a 6)
+
+
+</comando> (per chiudere un comando)
+
+
+<A HREF="indirizzo URL del documento con cui si vuole il 
+collegamento"> parole che si vuole che appaiano cliccabili </A>
+
+
+Liste non ordinate 
+Scrivendo
+<UL>
+<LI> primo elemento
+<LI> secondo elemento
+<LI> ...
+</UL>
+
+
+Liste ordinate 
+Scrivendo
+<OL>
+<LI> primo elemento
+<LI> secondo elemento
+<LI> ...
+</OL>
+
+
+Liste di definizioni 
+Scrivendo
+<DL>
+<DT> termine </DT> <DD> definizione primo termine </DD> 
+<DT> termine </DT> <DD> definizione secondo termine </DD> 
+<DT> termine </DT> <DD> definizione terzo termine </DD> 
+</DL>
+si ottiene
+termine
+      definizione primo termine
+termine
+      definizione secondo termine
+termine
+      definizione terzo termine
+
+
+testo in grassetto
+<B> testo in grassetto </B>
+oppure <STRONG> testo in grassetto </STRONG>
+
+
+testo in corsivo
+<I> testo normale </I>
+oppure <EM> testo in italico </EM>
+oppure <VAR> testo in italico </VAR>
+oppure <CITE> testo in italico </CITE>
+
+
+testo mono-spaziato
+<KBD> testo mono-spaziato</KBD>
+oppure <CODE> mono-spaziato </CODE>
+oppure <SAMP> mono-spaziato </SAMP>
+oppure <PRE> mono-spaziato </PRE> può essere usato per più linee e infatti crea automaticamente una riga vuota dopo.
+
+
+tabelle
+<TABLE BORDER="BORDER"> 
+<CAPTION> titolo della tabella  (facoltativo) </CAPTION> 
+<TR>
+  <TH> intestazione della colonna </TH>
+  <TH> intestazione della colonna </TH>
+</TR>
+<TR>
+  <TD> cella 1  </TD>
+  <TD> cella 2  </TD>
+</TR>
+<TR>
+  <TD> cella 3  </TD>
+  <TD> cella 4  </TD>
+</TR>
+
+
+immagini
+<IMG SRC="(inserire URL immagine" 
+WIDTH=(inserire dimensioni immagine) HEIGHT=(inserire dimensioni immagine) ALT="(inserire descrizione immagine)">
+
+
+<!-- (commento) --> per commentare parti del testo che poi non saranno visibili.
+
+
+<BR> per andare a capo (interruzione di linea).
+
+
+<P> per delimitare i paragrafi (va a capo e lascia una riga bianca dopo).
+
+
+<HR> produce una linea orizzontale.
+
+
+<ADDRESS> (testo) </ADDRESS> per la parte che fa da "firma" del documento contenente il nostro nome e/o indirizzo.

@@ -1,0 +1,61 @@
+.body{
+  font-family:verdana;
+  color:white;
+  font-size:27px;
+  margin-top:5%;
+  margin-left:20%;
+  margin-right:20%;
+  text-align:center;
+  }
+body{
+  background-image:url(immagini/img.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+  background-position: center;
+  margin:0px
+  }
+  ::-webkit-scrollbar {
+      display: none;
+  }
+.navbar{
+  list-style-type: none;
+  width: 100%;
+  overflow: hidden;
+  height: 6%;
+  background-color: slategray;
+  position:fixed;
+  margin-left:0%;
+  margin-right:0%;
+  margin-top:-5%;
+  margin-bottom:10%;
+  padding-top: 1%;
+  text-align:center;
+  display:inline-block;
+}
+.nav{
+  text-align:center;
+  display:inline-block; /*se metto inline block mi centra le immagini grazie a text align ma non mette il border radius e quindi i bordi coprono l'immagine */
+  padding-left: 7%;
+  padding-right: 7%;
+}
+a:hover{
+  border-bottom: solid orange;
+}
+
+.a{border-radius: 10%;}
+img{object-fit: cover;}
+.a{
+  /*padding-left:10%;
+  padding-right:10%;*/
+  transition: -webkit-transform 0.25s ease;
+  transition: transform 0.25s ease;
+}
+
+.a:hover{
+  transform:scale(1.2);
+  -ms-transform:scale(1.2); /* IE 9 */
+  -moz-transform:scale(1.2); /* Firefox */
+  -webkit-transform:scale(1.2); /* Safari and Chrome */
+  -o-transform:scale(1.2); /* Opera */
+}

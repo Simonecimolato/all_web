@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" href="immagini/pi.png">
+	<link rel="stylesheet" href="pi.css" type="text/css">
+	<script type="text/javascript" src="latexit.js"></script>
+	<style>
+  		div .latex { background: white; padding: 10px; border: 3px solid black;}
+	</style>
+	<title>Pi greco</title>
+</head>
+<body>
+  <ul class="navbar">
+		<li class="nav"> <a href="index.html"><img class="a" src="immagini/home.png" height="40px" width="40px"> </img></li></a>
+    <li class="nav"> <a href="e.html" ><img class="a" src="immagini/e.png" height="40px" width="40px"></img> </li></a>
+    <li class="nav"> <a id="active" ><img class="a" src="immagini/pi.png" height="40px" width="40px"> </img></li></a>
+		<li class="nav"> <a href="phi.html" ><img class="a" src="immagini/phi.png" height="40px" width="40px"> </img></li></a>
+		<li class="nav"> <a href="reali.html" ><img class="a" src="immagini/real.png" height="40px" width="40px"></img> </li></a>
+	</ul>
+<div id="bodyy">
+<center><h1>PI GRECO </h1></center>
+<br/>
+Il Pi Greco per definizione &egrave una costante definita come rapporto tra una circonferenza e il suo diametro, tale rapporto &egrave costante per qualsiasi
+circonferenza. In termini numerici il Pi greco &egrave un numero irrazionale, cio&egrave un numero decimale illimitato non periodico.
+Fin dall&#96antichit&agrave i popoli utilizzavano valori approssimati per esprimere il rapporto tra la circonferenza e il suo diametro, ma il primo ad
+approssimare scientificamente pi greco fu Archimede di Siracusa, che, nel III secolo a.C, cerc&ograve di approssimare la lunghezza di una circonferenza con
+le misure del perimetro di poligoni regolari inscritti e circoscritti alla circonferenza.<br/><br/>
+<center><img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Pi-unrolled-720.gif" width="50%" height="50%"  ></img></center>
+
+<hr/>
+<center><h2>Perimetro dei poligoni regolari inscritti e circoscrittti ad una circonferenza</h2></center>
+<center><IMG Src="immagini/immagine01.png"></center>
+<ol>
+  <li>Come primo passaggio bisogna disegnare un poligono inscritto e uno circoscritto ad una stessa circonferenza di diametro di
+  misura 1 (lunghezza della circonferenza uguale a &#960). Il perimetro del poligono inscritto sar&agrave la misura della circonferenza, e
+  quindi sar&agrave un&#96;approssimazione per difetto di &#960, mentre il perimetro del poligono circoscritto sar&agrave un&#96;approssimazione per
+  eccesso di &#960. </li>
+
+	<br/><br/>
+	<li>Inscriviamo e circoscriviamo in una circonferenza di centro O e di diametro 1 un poligono regolare (in questo caso un
+	quadrato), così possiamo ottenere la misura del lato utilizzando il teorema di Pitagora al triangolo AOB, rettangolo in O.</li>
+	<br/>
+	
+	<div lang="latex">\quad AB\quad =\quad \sqrt { { \left( \frac { 1 }{ 2 }  \right)  }^{ 2 }+{ \left( \frac { 1 }{ 2 }  \right)  }^{ 2 } } \rightarrow \quad AB\quad =\quad \frac { \sqrt { 2 }  }{ 2 }</div>
+	
+
+<p>Quindi la misura del perimetro del quadrato inscritto &egrave;  2P=4&radic;2/2=2&radic;2, mentre la misura del perimetro
+del quadrato circoscritto &egrave; 2P=4. Dunque &#960 &egrave; compreso tra 2&radic;2 e 4. Per ottenere un approssimazione migliore di &#960 bisogna aumentare
+il numero dei lati dei due poligoni.</p>
+<br/><br/>
+
+	<li>Successivamente inscriviamo e circoscriviamo un ottagono e notiamo che l&#96;ottagono circoscritto ha perimetro minore del
+	quadrato circoscritto mentre l&#96;ottagono inscritto ha perimetro maggiore del quadrato circoscritto. Se indichiamo con p4 e p8
+	rispettivamente le misure dei perimetri del quadrato e dell&#96;ottagono inscritti e con P4 e P8 quelle del quadrato e dell&#96;	ottagono
+	circoscritti abbiamo che:</li>
+<br/><br/>
+	<center>p4 < p8< &#960 < P8 < P4</center>
+
+<p>Questo procedimento &egrave; valido per qualsiasi poligono regolare inscritto e circoscritto.</p>
+	<li>Per avere un approssimazione migliore di &#960 dobbiamo supporre di conoscere la misura del lato ln di un poligono di n lati
+	inscritto in una circonferenza con raggio 1/2,dalla quale si ricava l<sub>2n</sub> del lato del poligono ottenuto raddoppiando i lati di
+	esso. Consideriamo AB lato del poligono regolare con n lati, mentre AC e CB sono lati del poligono con 2n lati. Quindi AB = l<sub>n</SUb> e
+	AC = CB =  l<sub>2n</sub>. Siccome AB &egrave; perpendicolare a OC. Possiamo applicare il teorema di Pitagora, prima del triangolo OHA e poi del
+	triangolo AHC e si ha:</li>
+
+	<br/>
+
+	<div lang="latex">OH\quad =\quad \sqrt { { \left( \frac { 1 }{ 2 }  \right)  }^{ 2 }-\left( \frac { { l }_{ n } }{ 2 }  \right) ^{ 2 } } =\quad \frac { 1 }{ 2 } \sqrt { 1-{ \left( { l }_{ n } \right)  }^{ 2 } } </div>
+
+	<br/>
+
+	<div lang="latex">CH\quad =\quad CO-\quad OH\quad =\frac { 1 }{ 2 } -\frac { 1 }{ 2 } \sqrt { 1-{ \left( { l }_{ n } \right)  }^{ 2 } } =\frac { 1 }{ 2 } \left( 1-\sqrt { 1-{ \left( { l }_{ n } \right)  }^{ 2 } }  \right) </div><center><img src="immagini/immagine02.png" height="200px" width="200px"></center>
+
+
+
+	<div lang="latex">AC\quad ={ l }_{ 2n }=\sqrt { { AH }^{ 2 }\quad +\quad { CH }^{ 2 } } =\quad \sqrt { \frac { { \left( { l }_{ n } \right)  }^{ 2 } }{ 4 } \quad +\left[ \frac { 1 }{ 2 } \quad +\left( 1-\sqrt { 1\quad -\quad { \left( { l }_{ n } \right)  }^{ 2 } }  \right)  \right]  } ^{ 2 }=\frac { 1-\sqrt { 1\quad -\quad { \left( { l }_{ n } \right)  }^{ 2 }\quad  }  }{ 2 }   </div>
+
+	<br/>
+	</ol>
+<ul square>
+	<li>Da cui applicando la formula per la trasformazione dei radicali doppia si ha:</li>
+	<br/>
+	<div lang="latex">{ l }_{ 2n }\quad =\quad \sqrt { \frac { 1 }{ 4 } \quad +\quad \frac { { \quad l }_{ n } }{ 4 }  } -\sqrt { \frac { 1 }{ 4 } \quad -\quad \frac { { \quad l }_{ n } }{ 4 }  } =\frac { 1 }{ 2 } \left( \sqrt { \left( 1\quad +{ \quad l }_{ n }\quad  \right)  } \quad -\quad \sqrt { \left( 1\quad -\quad { l }_{ n }\quad  \right)  }  \right) </div>
+	<br/>
+	<li>Quindi si ha che:</li>
+
+<br/>
+	<div lang="latex">{ p }_{ n }\quad =\quad n\cdot { l }_{ n }\quad \rightarrow \quad { l }_{ n }\quad =\frac { { p }_{ n } }{ n } \quad \rightarrow { p }_{ 2n }\quad =\quad 2n\quad \cdot \quad { l }_{ 2n } </div>
+<br/>
+	<div lang="latex">{ p }_{ 2n }\quad =\quad n\left( \sqrt { 1\quad +\quad \frac { { p }_{ n } }{ n }  } -\quad \sqrt { 1\quad -\quad \frac { { p }_{ n } }{ n }  } \quad  \right)  </div>
+<br/>
+	<li>Da cui:</lI>
+<br/>
+	<div lang="latex">{ p }_{ 2n }\quad =\quad n\left( \sqrt { 1\quad +\quad \frac { { p }_{ n } }{ n }  } \quad -\quad \sqrt { 1\quad -\quad \frac { { p }_{ n } }{ n }  } \quad  \right) </div>
+<br/>
+</ul>
+<p>Poich&egrave; la misura del perimetro &egrave; p4=2&radic;2,dalla formula ottenuta possiamo ottenere la misura del perimetro  dell&#96;ottagono regolare inscritto.
+Con questa formula possiamo ottenere la misura del poligono di 16 lati,da cui la misura di quello di 32 lati e cos&igrave; via. Lo stesso ragionamento
+si pu&ograve; fare per i poligoni circoscritti. Con questi calcoli otteniamo che la misura del perimetro del poligono regolare inscritto di 4096 lati &egrave;
+pari a 3,14159 mentre quello del poligono regolare circoscritto di 4096 lati &egrave; pari a 3,145932696 che sono una buona approssimazione per difetto
+di &#960.
+Come primo passaggio bisogna disegnare un poligono inscritto e uno circoscritto ad una stessa circonferenza di diametro di misura 1 (lunghezza della
+circonferenza uguale a &#960). Il perimetro del poligono inscritto sar&agrave la misura della circonferenza e quindi sar&agrave un&#96;	approssimazione per difetto di &#960,
+mentre il perimetro del poligono circoscritto sar&agrave un&#96approssimazione per eccesso di &#960.</p>
+<hr/>
+	<center><h2>Area dei poligoni regolari inscritti e circoscrittti ad una circonferenza</h2></center>
+<p>Per determinare la misura dell&#96;area del cerchio possiamo svolgere ragionamenti simili a quelli gi&agrave fatti per la lunghezza delle circonferenze.
+Consideriamo quindi un poligono regolare inscritto di n lati la cuoi misura &egrave; l<sub>n</sub> , esso &egrave; composto da n triangoli isosceli tutti congruenti tra
+loro con vertice O. Poi tracciamo la mediana OH che &egrave; anche altezza,siccome il triangolo &egrave; isoscele.<p>
+<center><img src="immagini/immagine03.png" height="200px" width="200px"></center>
+<ul>
+	<li>In questo modo possiamo applicare il teorema di Pitagora al triangolo OAH:</li>
+<br/>
+	<div lang="latex">{ OH }^{ 2 }\quad +\quad { \left( \frac { 1 }{ 2 } { l }_{ n } \right)  }^{ 2 }=\quad { \left( \frac { 1 }{ 2 }  \right)  }^{ 2 }\rightarrow \quad OH\quad =\frac { 1 }{ 2 } \sqrt { 1\quad -{ \left( { l }_{ n } \right)  }^{ 2 } } </div>
+<br/>
+
+
+	<li>La misura dell&#96;area OAB &egrave;:</li>
+<br/>
+	<div lang="latex">\frac { 1 }{ 2 } AB\quad \cdot \quad OH\quad =\frac { 1 }{ 2 } { l }_{ n }\quad \cdot \quad \frac { 1 }{ w } \sqrt { 1\quad -\quad { \left( { l }_{ n } \right)  }^{ 2 } } \quad \rightarrow \quad A\left( AOB \right) \quad =\frac { 1 }{ 4 } { l }_{ n }\sqrt { 1\quad -\quad { \left( { l }_{ n } \right)  }^{ 2 } } </div>
+<br/>
+
+	<li>Se indichiamo con a<sub>n</sub> la misura dell&#96;area del poligono regolare inscritto di n lati, si ha allora:</li>
+<br/>
+	<div lang="latex">{ a }_{ n }\quad =\quad \frac { n }{ 4 } { l }_{ n }\sqrt { 1\quad -\quad { \left( { l }_{ n } \right)  }^{ 2 } } </div>
+<br/>
+
+	<li>Quindi se  p<sub>n</sub> &egrave; la misura del perimetro del poligono, &egrave; l<sub>n</sub>=p<sub>n</sub>/n  e otteniamo:</li>
+<br/>
+	<div lang="latex">{ a }_{ n }\quad =\quad \frac { n }{ 4 } \cdot \frac { { p }_{ n } }{ n } \sqrt { 1\quad -\quad { \left( \frac { { p }_{ n } }{ n }  \right)  }^{ 2 } } \rightarrow \quad { a }_{ n }\quad =\quad \frac { { p }_{ n } }{ 4 } \sqrt { 1\quad -\quad { \left( \frac { { p }_{ n } }{ { n }^{ 2 } }  \right)  }^{ 2 } } </div>
+<br/>
+
+	<li>Ora per trovare l&#96;area del poligono circoscritto di n lati dobbiamo considerare l&#96;altezza di ogni triangolo che &egrave; 1/2 e se indichiamo con
+	L<sub>n</sub> la misura del lato del poligono,allora l&#96;area misurer&agrave;:</li>
+<br/>
+	<div lang="latex">\frac { 1 }{ 2 } { L }_{ n }\cdot \frac { 1 }{ 2 } \quad =\quad \frac { 1 }{ 4 } { L }_{ n }</div>
+<br/>
+
+	<li>Avendo indicato con Pn la misura del perimetro si avr&agrave L<sub>n</sub>=P<sub>n</sub>/n da cui:</li>
+<br/>
+	<div lang="latex">{ A }_{ n }\quad =\quad \frac { { p }_{ n } }{ 4 } >/div>
+<br/>
+	</ul>
+
+Utilizzando queste formule si può notare che An &egrave; uguale ad  P<sub>n</sub>/4,siccome Pn &egrave; un&#96;approssimazione di &#960 si ha che la misura del l&#96;
+area del cerchio di diametro unitario &egrave; &#960/4.
+
+<HR/>
+<center><h2>Curiosit&agrave su Pi greco </h2></center>
+<h4>Curiosit&agrave sulle cifre</h4>
+<ol>
+<br/><br/>
+	<li>Pi greco pu&ograve; sembrare un numero infinito che serve soltanto per calcolare lunghezza di una circonferenza e area di un cerchio,invece &eacute ricco
+	di curiosit&agrave. Siccome ha un numero di cifre infinite senza mai avere una ripetizione,possiamo convertire la cifre di pi greco in lettere
+	(a=1,b=2)ottenendo qualsiasi parola concepita in qualsiasi combinazione,le cifre di pi greco possono comporre anche qualsiasi data,combinazione,
+	numeri di telefono e ecc…, oppure si pu&ograve; anche assegnare a ciascuna cifra una nota della scala musicale creando cos&igrave; una melodia.</li>
+ <br/><br/>
+	<li>Un&#96;	altra curiosit&agrave &egrave; quella scoperta da H.Bailey , P.Borwein e S. Plouffe utilizzando la seguente formula per calcolare l&#96;
+	ennesima cifra di &#960 senza dover dover calcolare tutte le cifre precedenti.</li>
+
+<br/>
+	<div lang="latex">\pi \quad =\sum _{ k=0 }^{ \infty  }{ \frac { 1 }{ { 16 }^{ k } }  } \left( \frac { 4 }{ 8k+1 } \quad -\quad \frac { 2 }{ 8k+4 } \quad -\quad \frac { 1 }{ 8k+5 } \quad -\quad \frac { 1 }{ 8k+6 }  \right) </div>
+<br/>
+	<br/><br/>
+	<li>Anche se pi greco ha infinite cifre servono solo le prime 39 cifre per approssimare un qualsiasi calcolo</li>
+<br/><br/>
+	<li>L&#96;ultima cifra di pi greco che si &egrave; riusciti a calcolare &egrave; uno zero ed &egrave; la 2.000.000.000.000.000 cifra di pi greco scoperta da Nicholas
+	Sze con l&#96;aiuto di Yahoo e Google.</li>
+
+<p>La tecnica che ha usato, infatti, &egrave; stata quella del MapReduce, sviluppata da Google (e gi&agrave rivelatasi molto utile in fisica e nella
+   criptogrfia),che ha contribuito a distribuire l&#96;operazione semplificando notevolmente il processo. Suddividendo i problemi in tanti piccoli
+   sotto-problemi e il numero di cifre decimali calcolate, rispetto al precedente record di 5 trilioni (un trilione corrisponde a mille miliardi),
+   &egrave; semplicemente raddoppiato.</p>
+</oL>
+
+<h4>Il giorno di pi greco</h4>
+<ol>
+Il giorno dedicato al Pi greco &egrave; il 14 marzo: la scelta &egrave; ispirata dalla grafia anglosassone del numero 3.14, grafia che indica l&#96;	approssimazione
+ ai centesimi di pi greco. Inoltre alcuni celebrano la ricorrenza dalle ore 15, in modo da adeguarsi all&#96;approssimazione 3.1415.
+La prima celebrazione del "Pi Day" si tenne nel 1988 all'Exploratorium di San Francisco, per iniziativa del fisico statunitense Larry Shaw, in
+seguito insignito del titolo di "Principe del pi greco". Il calendario della prima manifestazione prevedeva un corteo circolare attorno ad uno degli
+ edifici del museo e la vendita di torte alla frutta, decorate con le cifre decimali del pi greco.
+In questi giorni nei dipartimenti di matematica in varie istituzioni nel mondo si coglie l'occasione per organizzare delle feste. La celebrazione
+avviene anche in comunit&agrave virtuali come Second Life e Facebook.
+Il 14 marzo 2010 Google ha reso omaggio alla giornata del pi greco con una versione artistica del proprio logo.
+</ol>
+<br/>
+<hr/>
+<center><h2>Questo &egrave Pi greco!</h2></center>
+Questa immagine mostra le prime 11.000 di cifre di Pi greco, ognuna delle quali &egrave rappresentata da un quadratino di diverso colore disegnati in sequenza, da totalmente bianco a totalmente nero in base alla cifra che rappresenta, infatti più la cifra sar&agrave vicina allo 0 e pi&ugrave il quadrato sar&agrave di un colore chiaro, diventando sempre più scuro fino ad arrivare al numero 9, rappresentato da un quadratino tutto nero.
+<br/>
+<br/>
+Clicca <a class="normal" href="immagini/Pi 1M.tiff" download>qui</a> per scaricare la versione da 1 milione di cifre e <a target="_blank" class="normal" href="https://github.com/Simonecimolato/Pi-squares">qui</a> per il codice che produce questa immagine.
+<br/>
+<br/>
+<br/>
+<img src="immagini/pi10.png" width="100%" height="75%"></img>
+<br/>
+<br/>
+<center><h2>Il suono di Pi greco!</h2></center>
+Abbiamo visto come si vede Pi greco, ma <strong>come si sente?</strong><br/>
+Questo audio contiene 15 secondi nei quali vengono riprodotte le sue cifre in sequenza con un intervallo fra una e l'altra di 90 millisecondi, viene riprodotta una certa frequenza per ogni cifra, le frequenze vanno dai 200 hz ai 900 hz. Più la cifra sarà bassa, più la frequenza sarà vicina ai 200 hz, viceversa se la cifra sarà alta la frequenza sar&agrave vicina ai 900 hz.
+<br/>
+<br/>
+<center>
+<button class="button5" onclick="lel()">Play</button>
+</center>
+Clicca <a target="_blank" class="normal" href="https://github.com/Simonecimolato/Pi-sound">qui</a> per il codice che produce questo audio.
+</div>
+<script>
+ function lel(){
+	var audio = new Audio('suoni/Psound.mp3');
+	audio.play();
+ }
+</script>
+</body>
+</html>

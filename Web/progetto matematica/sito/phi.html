@@ -1,0 +1,214 @@
+<!doctype html>
+<meta charset="utf8">
+	<head>
+	<link rel="icon" href="immagini/phi.png">
+	<style type="text/css">
+	body{
+		text-align:justify;
+		text-justify: inter-word;
+		color:white;
+		background-position: center;
+		background-image:url(immagini/img.jpg);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size:cover;
+		margin-left: 0px;
+		margin-right: 0px;
+		margin-top: 0px;
+		margin-bottom: 10%;
+		}
+	::-webkit-scrollbar {
+	    display: none;
+	}
+	.a{
+    /*padding-left:10%;
+    padding-right:10%;*/
+    transition: -webkit-transform 0.25s ease;
+    transition: transform 0.25s ease;
+  }
+
+  .a:hover{
+    transform:scale(1.2);
+    -ms-transform:scale(1.2); /* IE 9 */
+    -moz-transform:scale(1.2); /* Firefox */
+    -webkit-transform:scale(1.2); /* Safari and Chrome */
+    -o-transform:scale(1.2); /* Opera */
+  }
+	#bodyy{
+	  font-family:Verdana;
+	  text-align: justify;
+	  text-justify: inter-word;
+	  color: white;
+	  margin-top:5%;
+	  margin-left:20%;
+	  margin-right:20%;
+	  }
+	  #active{border-bottom: solid red}
+button{ 
+	background-color: black; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.25s; /* Safari */
+    transition-duration: 0.25s;
+    cursor: pointer;
+	}
+.button5 {
+    background-color: white;
+    color: black;
+    border: 5px solid slategray;
+}
+
+.button5:hover {
+    background-color: black;
+    color: white;
+	border: 4px solid whte;
+}
+
+	.navbar{
+	  list-style-type: none;
+	  width: 100%;
+	  overflow: hidden;
+	  height: 6%;
+	  background-color: slategray;
+	  position:fixed;
+	  margin-left:0%;
+	  margin-right:0%;
+	  margin-top:-5%;
+	  margin-bottom:10%;
+	  padding-top: 1%;
+	  text-align:center;
+	  display:inline-block;
+	}
+	span{text-align: center;}
+	h1{font-size:400%;text-align: center;}
+
+	.nav{
+		text-align:center;
+		display:inline-block; /*se metto inline block mi centra le immagini grazie a text align ma non mette il border radius e quindi i bordi coprono l'immagine */
+		padding-left: 7%;
+		padding-right: 7%;
+	}
+
+	.a{border-radius: 10%;}
+	img{object-fit: cover;}
+	a:hover:not(#active):not(.normal){
+	  border-bottom: solid orange;
+	}
+	h2{text-align:center}
+	</style>
+	<title>La sezione aurea</title>
+
+	</head>
+	<body background="immagini/img.jpg">
+		<ul class="navbar">
+			<li class="nav"> <a href="index.html"><img class="a" src="immagini/home.png" height="40px" width="40px"> </img></li></a>
+			<li class="nav"> <a href="e.html" ><img class="a" src="immagini/e.png" height="40px" width="40px"></img> </li></a>
+			<li class="nav"> <a href="pi.html" ><img class="a" src="immagini/pi.png" height="40px" width="40px"> </img></li></a>
+			<li class="nav"> <a id="active" ><img class="a" src="immagini/phi.png" height="40px" width="40px"> </img></li></a>
+			<li class="nav"> <a href="reali.html"><img class="a" src="immagini/real.png" height="40px" width="40px"></img> </li></a>
+		</ul>
+		<div id="bodyy">
+
+	<h1>LA SEZIONE AUREA</h1>
+	<p><strong>DEF</strong>: Si dice sezione aurea di un segmento la parte del segmento che è media proporzionale tra l’intero segmento e la parte rimanente. </p><br/><hr/>
+
+	<h2>La sezione aurea</h2><br/>
+	Tale sezione prende anche il nome di costante di Fidia o proporzione divina. Per determinarne il valore, consideriamo un segmento di misura v. Detta x la sezione aurea, essa dovrà soddisfare la seguente proporzione.
+	<div><i>v:x=x:(v-x)</i></div>
+	Svolgendo i calcoli.
+
+	<div class="eq-c">
+	<i>v(v-x)</i>=<i>x</i><sup>2</sup>
+	</div>
+	<div class="eq-c">
+	<i>v</i><sup>2</sup>-<i>vx</i>=<i>x</i><sup>2</sup>
+	</div>
+	<div class="eq-c">
+	<i>x</i><sup>2</sup>+<i>vx</i>-<i>v</i><sup>2</sup>=<i>0</i>
+	</div><br/>
+	<center><img src="immagini/equazioni.png"></img></center>
+	<br/>Consideriamo solo x<sub>1</sub> perché i segmenti non possono essere negativi, pertanto la misura della parte aurea di un segmento di misura <em>v</em> è la seguente.<br/><br/>
+	<center><br/><img src="immagini/eq1.png"></img></center><br/><br/><br/><hr/>
+	<h2>Il rapporto aureo</h2><br/>
+	È anche possibile definire il rapporto aureo, cioè il rapporto tra la misura di un segmento e la sua sezione aurea; dunque è indipendente dalla misura del segmento stesso. Tale rapporto si indica con la lettera greca ϕ.<br/>
+	<br/>
+	<center><img src="immagini/eq2.png"></img></center><br/><br/><br/><hr/>
+	<h2>Nella geometria</h2><br/>
+
+	La sezione aurea ricorre abbastanza frequentemente in geometria. Nel pentagono regolare emerge naturalmente, e per questo venne scoperto dai greci, nel rapporto fra la diagonale e il lato o, fra il pentagono interno e il lato della punta stellata.<br/>
+	<center><img src="immagini/pentagono.png" width="480" height="430"></img></center><br/>
+
+	Si ritrova anche nel decagono come rapporto fra la misura del raggio della circonferenza circoscritta e del lato, o ancora, trasferendoci nella geometria solida, perfino nel dodecaedro, un poligono a dodici pentagoni, e nell'icosaedro, entrambi solidi regolari.<br/><br/><br/>
+	<hr/>
+	<h2>Poligoni aurei</h2><br/>
+
+	<center><img src="immagini/aureo.png" width="147" height="91"></img></center>
+	<br/>
+	Si definisce rettangolo aureo il rettangolo avente un lato che è sezione aurea dell'altro.Si definisce triangolo aureo il triangolo isoscele avente i due lati uguali in rapporto aureo con il terzo lato. Inoltre si può notare che &egrave ricavabile una successione di figure simili sempre più piccole con fattore φ di rimpicciolimento rispetto a quella più esterna. Inoltre, nel rettangolo aureo, è possibile verificare che la sequenza "converge" verso un punto di fuga che non si raggiungerà mai, denominato dal matematico Clifford A. Pickover l'occhio di Dio, probabilmente rifacendosi alla definizione di "divina" data alla proporzione da Pacioli.<br/><br/><br/>
+	<br/><hr/>
+
+	<h2>Costruzione con riga e compasso della sezione aurea di un segmento.</h2><br/>
+	<center><img src="immagini/cerchi.png"></img></center>
+	<br/>Dato il segmento AB, si deve tracciare la perpendicolare ad AB nell’estremo B e si deve prendere su di essa il segmento BO lungo metà di AB. Quindi, col centro in O, si deve costruire una circonferenza di raggio OB. A questo punto si unisce A con O e si indica con C e D le intersezioni della retta AO con la circonferenza precedente. Infine con centro in A e raggio AC, si costruisce la circonferenza che incrocia il segmento AB in E, AE&cong;AC. Dimostriamo che AE è il segmento cercato, cioè che sussiste la proporzione
+	<div><em>AB:AE=AE:EB</em></div>
+	Per il teorema della tangente e della secante, si ha
+	<div><em>AD:AB=AB:AC</em></div>
+	Applicando la proprietà dello scomporre, si ottiene
+	<div><em>(AD-AB):AB=(AB-AC):AC</em></div>
+	Siccome è
+	<div>AB&cong;CD e AC&cong;AE</div>
+	si ha anche
+	<div>AD-AB&cong;AD-CD=AC&cong;AE e AB-AC&cong;AB-AE=EB</div>
+	La proporzione<em>(AD-AB):AB=(AB-AC):AC</em> quindi diventa
+	<div><em>AE:EB=EB:AE</em></div>
+	da cui, per la proprietà dell’ invertire,
+	<div><em>AB:AE=AE:EB</em></div>
+	Pertanto AE è la sezione aurea di AB.<br/>
+	Sommando a un segmento la sua sezione aurea si ottiene un nuovo segmento di cui quello dato è sezione aurea. Infatti, applicando alla proporzione<em>v:x=x:(v-x)</em>la proprietà del comporre, si ottiene
+	<div><em>(v+x):a=[x+(v-x))]:x &rarr; (v+x):v=v:x</em></div>
+	Tale proporzione prova l’enunciato.<br/><br/><br/>
+	<hr/>
+	<h2>Caratteristiche comuni con la successione di Fibonacci</h2><br/>
+	La successione di Fibonacci è una successione di numeri tale che, partendo da 0 e 1, qualsiasi termine successivo si ottiene sommando i due precedenti<br/>
+	<div>0 1 1 2 3 5 8 13 21 34 ...</div>
+	Possiamo osservare che, se dividiamo ogni termine, a partire dal terzo per il precedente, la successione dei rapporti tende al rapporto aureo ϕ.<br/>
+	Infatti, se scriviamo la successione dei rapporti a partire deal terzo termine, si ha<br/>
+	<div>1 2 1.<span style="text-decoration:overline;">5</span> 1.6 1.625 1.61538... 1.61904... 1.61764... 1.61818...</div>
+	da cui si vede che i valori dei rapporti si avvicinano sempre di più a 1.61803…  che è il valore di ϕ. Nel rettangolo aureo la successione dei lati dei quadrati si ottiene come la successione dei numeri di Fibonacci.
+	<br/>
+	<br/>
+	<hr/>
+	<center><h2>Questa è la Sezione Aurea!</h2></center>
+	Questa immagine mostra le prime 10.000 di cifre della Sezione Aurea, ognuna delle quali è rappresentata da un quadratino di diverso colore disegnati in sequenza, da totalmente bianco a totalmente nero in base alla cifra che rappresenta, infatti più la cifra sarà vicina allo 0 e più il quadrato sarà di un colore chiaro, diventando sempre più scuro fino ad arrivare al numero 9, rappresentato da un quadratino tutto nero.
+	<br/>
+	<br/>
+	Clicca <a class="normal" href="immagini/SezA2.tiff" download>qui</a> per scaricare la versione da 1.000.000 di cifre e <a target="_blank" class="normal" href="https://github.com/Simonecimolato/Pi-squares">qui</a> per il codice che produce questa immagine.
+	<br/>
+	<br/>
+	<br/>
+	<img src="immagini/phi_10.png" width="100%" height="75%"></img>
+	<br/>
+	<br/>
+	<center><h2>Il suono della Sezione Aurea!</h2></center>
+	Abbiamo visto come si vede la Sezione Aurea, ma <strong>come si sente?</strong><br/>
+	Questo audio contiene 15 secondi nei quali vengono riprodotte le sue cifre in sequenza con un intervallo fra una e l'altra di 90 millisecondi, viene riprodotta una certa frequenza per ogni cifra, le frequenze vanno dai 200 hz ai 900 hz. Più la cifra sarà bassa, più la frequenza sarà vicina ai 200 hz, viceversa se la cifra sarà alta la frequenza sarà vicina ai 900 hz.
+	<br/>
+	<br/>
+	<center>
+		<button class="button5" onclick="lel()">Play</button>
+	</center>
+	Clicca <a target="_blank" class="normal" href="https://github.com/Simonecimolato/Pi-sound">qui</a> per il codice che produce questo audio.
+</div>
+<script>
+ function lel(){
+	var audio = new Audio('suoni/Phisound.mp3');
+	audio.play();
+ }
+ </script>
+</body>

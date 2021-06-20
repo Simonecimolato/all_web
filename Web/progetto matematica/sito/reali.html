@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<head>
+<link rel="icon" href="immagini/real.png">
+	<title>Numeri reali</title>
+	<link rel="stylesheet" href="reali.css" type="text/css">
+	<meta charset="utf-8">
+</head>
+	</head>
+
+<body>
+	<ul class="navbar">
+		<li class="nav"> <a href="index.html"><img class="a" src="immagini/home.png" height="40px" width="40px"> </img></li></a>
+		<li class="nav"> <a href="e.html" ><img class="a" src="immagini/e.png" height="40px" width="40px"></img> </li></a>
+		<li class="nav"> <a href="pi.html" ><img class="a" src="immagini/pi.png" height="40px" width="40px"> </img></li></a>
+		<li class="nav"> <a href="phi.html" ><img class="a" src="immagini/phi.png" height="40px" width="40px"> </img></li></a>
+		<li class="nav"> <a id="active" ><img class="a" src="immagini/real.png" height="40px" width="40px"></img> </li></a>
+	</ul>
+<div id="bodyy">
+<h1 class="center">I NUMERI REALI</h1>
+L’insieme dei numeri reali può essere suddiviso in due sottoinsiemi: quello dei numeri razionali e quello dei numeri irrazionali.<br/>
+Cos’è un numero irrazionale?<br/>
+Un esempio di numero irrazionale è &radic;2. Ma perché è irrazionale?<br/>
+Possiamo scrivere diversi numeri razionali il cui quadrato sia approssimativamente 2, ma nessuno di questi darà esattamente 2.<br/><br/>
+1,4<sup>2</sup>= 1,96 <span class="c">1,5<sup>2</sup>=2,25</span><br/>
+1,41<sup>2</sup>=1,9881 <div class="c">1,42<sup>2</sup>=2,016</div><br/>
+1,414<sup>2</sup>=1,999396 <div class="c">1,415<sup>2</sup>=2,0022325</div><br/>
+1,4142<sup>2</sup>=1,99996164 <div class="c">1,4143<sup>2</sup>=2,00024449</div><br/><br/>
+Possiamo notare che nella prima colonna tutti i quadrati sono minori di 2, mentre nella seconda sono maggiori. Anche se continuassimo ad aggiungere cifre decimali in entrambe le colonne, non otterremmo mai come risultato 2. Bisogna quindi definire un nuovo numero, che non potendo essere razionale, sarà chiamato irrazionale.<br/>
+<br/>
+<hr/>
+<h2 class="center"> Numeri algebrici e trascendenti</h2>
+I numeri reali possono essere divisi in altri due insiemi: numeri algebrici e numeri trascendenti.<br/>
+<div class="indent"><b>Un numero reale si dice algebrico, se è soluzione di un’equazione algebrica P(x)=0, dove P(x) è un polinomio in x a coefficienti interi.</b></div><br/>
+Da questa definizione si può dire che ogni numero razionale è algebrico.<br/>
+Infatti qualsiasi frazione a/b  è la soluzione dell’equazione bx&minus;a=0.<br/>
+Anche alcuni numeri irrazionali sono algebrici.<br/>
+Per esempio &radic;2 è soluzione dell’equazione algebrica x<sup>2</sup>&minus;2=0 <br/>
+<div class="indent"><b>Un numero reale si definisce trascendente se non è algebrico.</b></div><br/>
+Dato che tutti i razionali sono algebrici, possiamo dire che tutti i numeri trascendenti sono irrazionali.<br/>
+<br/>
+<hr/>
+<h2 class="center">Classi contigue e sezioni di Q</h2>
+Due classi A e B di numeri razionali si dicono contigue se soddisfano le due condizioni seguenti:<br/>
+<ul>
+	<li>A e B sono separate, cioè ogni elemento di A è minore di ogni elemento di B;</li>
+	<li>A e B sono indefinitamente ravvicinate, cioè prendendo un numero razionale ԑ positivo a piacere, si può sempre determinare una coppia di numeri, tale che .</li>
+</ul>
+	Per capire meglio questa definizione, riprendiamo le due colonne di numeri razionali vicini a 2:<br/>
+<center>
+<table id="w" border="1">
+	<tr>
+		<th>n<br/>numero di cifre decimali</th>
+		<th>a<sub>n</sub><br/>approssimazione per difetto</th>
+		<th>b<sub>n</sub><br/>approssimazione per eccesso</th>
+		<th>b<sub>n</sub>-a<sub>n</sub></th>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>1,4</td>
+		<td>1,5</td>
+		<td>0,1</td>
+	</tr>
+	<tr>
+		<td>2</td>
+		<td>1,41</td>
+		<td>1,42</td>
+		<td>0,01</td>
+	</tr>
+	<tr>
+		<td>3</td>
+		<td>1,414</td>
+		<td>1,415</td>
+		<td>0,001</td>
+	</tr>
+	<tr>
+		<td>…</td>
+		<td>…</td>
+		<td>…</td>
+		<td>…</td>
+	</tr>
+	<tr>
+		<td>n</td>
+		<td>…</td>
+		<td>…</td>
+		<td>10<sup>-n</sup></td>
+	</tr>
+</table>
+</center>
+Ogni numero della seconda colonna è minore di ogni numero della terza colonna.<br/>
+Si possono sempre trovare due numeri della seconda e della terza colonna, la cui differenza sia più piccola di un qualsiasi numero positivo a scelta.<br/><br/>
+
+Se invece considerassimo due classi (C;D) tali che:<br/>
+<ul>
+	<li>C contiene tutti i razionali positivi il cui quadrato è minore di 2 e tutti i negativi</li>
+	<li>D contiene tutti i razionali positivi il cui quadrato è maggiore di 2</li>
+</ul><br/>
+C e D formano una sezione dell’insieme Q.
+<br/>
+<div class="indent"><b>Una coppia di classi (C;D) si dice infatti sezione dell’insieme dei numeri razionali, se le due classi sono separate e se C&cup;D=Q.</b></div><br/>
+<br/>
+<hr/>
+<h2 class="center">Definizione di numero reale</h2>
+Prima di poter dare una definizione di numero reale occorre fare un ultimo passo:<br/>
+Consideriamo una coppia di classi contigue di  per indicare un numero. Guardiamo per esempio le classi (A;B) usate precedentemente: esse identificano un numero α tale che α<sup>2</sup>=2. <br/>
+Così però ci imbattiamo in un problema, infatti potremmo indicare α anche con le sezioni (C;D) di cui abbiamo parlato. Per questo motivo si stabilisce che per identificare un numero reale si utilizzano le sezioni di Q.<br/>
+Però, dato che l’insieme dei reali comprende Q, vogliamo che in questo modo si possano identificare anche i razionali. Poniamo il caso che si voglia identificare il numero 3 con una sezione di Q:<br/>
+A questo scopo consideriamo le classi (E;F) tali che:<br/>
+<div class="center">E=(&minus;&infin;;3) e F=[3;&plus;&infin;)</div><br/>
+
+Potremmo anche considerare la sezione costituita dalle classi E’ e F’ tali che:<br/>
+<div class="center">E'=(&minus;&infin;;3] e F'=(3;&plus;&infin;)</div><br/>
+
+Scegliamo di utilizzare sezioni in cui la prima classe non abbia elemento massimo, in questo caso quindi E e F.<br/>
+Possiamo finalmente dire che:<br/><br/>
+<b><i>Si definisce numero reale ogni sezione dell’insieme formata da due classi (A;B) tali che A non abbia elemento massimo.</i></b><br/><br/>
+Si possono verificare due casi in cui una sezione costituita dalle classi (A;B) identifica un numero reale s: <br/>
+<ol>
+	<li>s è maggiore di ogni elemento di A e minore o uguale di ogni elemento di B. Quindi s è l’elemento minimo di B, e  si dice elemento separatore delle due classi. In questo caso s è razionale.</li>
+	<li>Non esiste un numero razionale maggiore di ogni elemento di A e minore o uguale di ogni elemento di B. quindi s è irrazionale.</li>
+</ol>
+</div>
+</body>
